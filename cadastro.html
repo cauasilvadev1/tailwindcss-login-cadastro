@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | Minha Conta</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+
+    <main class="w-full max-w-md rounded-xl border border-gray-200 bg-white p-8 shadow-sm sm:p-10">
+
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-gray-900">Criar conta</h1>
+            <p class="mt-2 text-gray-500">Preencha seus dados</p>
+        </header>
+
+        <form action="#" method="get" class="flex flex-col gap-5"
+              onsubmit="event.preventDefault(); alert('Formulário de demonstração: cadastro não conectado a um servidor.');">
+
+            <div>
+                <label for="nome" class="mb-2 block font-medium text-gray-800">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name"
+                       placeholder="Seu nome" required
+                       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition placeholder:text-neutral-400 focus:border-gray-700 focus:ring-2 focus:ring-gray-200">
+            </div>
+
+            <div>
+                <label for="email" class="mb-2 block font-medium text-gray-800">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email"
+                       placeholder="voce@email.com" required
+                       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition placeholder:text-neutral-400 focus:border-gray-700 focus:ring-2 focus:ring-gray-200">
+            </div>
+
+            <div>
+                <label for="senha" class="mb-2 block font-medium text-gray-800">Senha</label>
+                <input id="senha" name="senha" type="password" autocomplete="new-password"
+                       minlength="6" placeholder="••••••••" required
+                       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition placeholder:text-neutral-400 focus:border-gray-700 focus:ring-2 focus:ring-gray-200">
+            </div>
+
+            <button type="submit"
+                    class="w-full cursor-pointer rounded-lg bg-neutral-900 py-3 font-semibold text-white transition hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2">
+                Cadastrar
+            </button>
+
+        </form>
+
+        <p class="mt-6 text-center text-gray-500">
+            Já tem conta?
+            <a href="login.html" class="font-semibold text-gray-900 hover:underline">Entrar</a>
+        </p>
+
+    </main>
+
+</body>
+</html>
